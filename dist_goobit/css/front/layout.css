@@ -13199,8 +13199,12 @@ input.datepicker,
 	}
 
 	.diagram_02 dt {
+		align-items: center;
+		display: flex;
+		justify-content: center;
 		font-size: 1.25rem;
 		font-weight: 600;
+		height: 100px;
 		color: #fff;
 		background: var(--primary);
 		padding: 0.72rem;

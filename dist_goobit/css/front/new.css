@@ -204,8 +204,8 @@
     }
 
     .diagram_01 ul li {
-        height: 240px !important;
-        width: 240px !important;
+        height: 220px !important;
+        width: 220px !important;
     }
 }
 
@@ -285,5 +285,15 @@
 
     .sa-container .col.l8 {
         width: 75%;
+    }
+}
+
+.diagram_02 dt {
+    font-size: 16px !important;
+}
+
+@media (min-width:1025px) {
+    .diagram_02 dt {
+        font-size: 20px !important;
     }
 }
