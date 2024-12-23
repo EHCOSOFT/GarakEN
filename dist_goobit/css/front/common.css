@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/* PC TOP 버튼 */
+#scrollTopPc {
+    display: none;
+    position: fixed;
+    bottom: 64px;
+    /* 브라우저 아래쪽 끝에서부터의 거리 */
+    right: 15px;
+    /* 브라우저 오른쪽 끝에서부터의 거리 */
+    cursor: pointer;
+    z-index: 99;
+}
+
+/* 모바일 TOP 버튼 */
+#scrollTopMob {
+    display: none;
+    position: fixed;
+    bottom: 64px;
+    /* 브라우저 아래쪽 끝에서부터의 거리 */
+    right: 15px;
+    /* 브라우저 오른쪽 끝에서부터의 거리 */
+    z-index: 99;
+}
+
+/* PC DOWN 버튼 */
+#scrollDownPc {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    /* 브라우저 아래쪽 끝에서부터의 거리 */
+    right: 15px;
+    /* 브라우저 오른쪽 끝에서부터의 거리 */
+    cursor: pointer;
+    z-index: 99;
+}
+
+/* 모바일 DOWN 버튼 */
+#scrollDownMob {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    /* 브라우저 아래쪽 끝에서부터의 거리 */
+    right: 15px;
+    /* 브라우저 오른쪽 끝에서부터의 거리 */
+    z-index: 99;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.gm-ico-text {
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+.bold_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.market-dm .bold_list .bold {
+    width: 100%;
+}
