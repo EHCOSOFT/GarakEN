@@ -148,7 +148,7 @@
 .school-wrap {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
 }
 
 .school-img img {
@@ -157,7 +157,7 @@
 
 @media screen and (min-width: 992px) {
     .school-wrap {
-        gap: 60px;
+        gap: 30px;
     }
 }
 
@@ -619,5 +619,11 @@
 @media (min-width:1400px) {
     .main-visual .main-visual-text .pc-text {
         max-width: 1200px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .ddmeal_w .sec_02 .diagram_01 dt {
+        width: auto;
     }
 }
