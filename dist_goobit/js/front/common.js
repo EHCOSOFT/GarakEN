@@ -63,7 +63,7 @@ $(document).ready(function () {
                     <div class="container">
                         <div class="sec_inner">
                             <div class="left">
-                            <a href="#" class="footer-logo"><img src="images/logo_footer.svg" alt="Seoul Agro-Fisheries & Food Corporation로고"></a>
+                            <a href="#" class="footer-logo"><img src="images/logo_footer.svg" alt="Seoul Agro-Fisheries & Food Corporation"></a>
                             <div class="info">
                             <div class="top">
                                 <p>Seoul Agro-Fisheries & Food Corporation</p>

@@ -2861,7 +2861,7 @@ footer .footer_top .familysite>li:last-of-type {
 
 footer .footer_top .familysite button {
 	width: 200px;
-	padding-left: 25px;
+	padding-left: 12px;
 	line-height: 44px;
 	text-align: left;
 	color: #fff;
@@ -2982,7 +2982,11 @@ footer section {
 
 footer section .sec_inner {
 	display: flex;
-	justify-content: space-between;
+	justify-content: start;
+}
+
+.footer_top .sec_inner {
+	justify-content: flex-end;
 }
 
 #fnb .fnb1 {
@@ -4834,8 +4838,10 @@ footer section .sec_inner {
 	}
 }
 
+
 .breadcrumb-wrap .breadcrumb li .txt {
 	display: inline-flex;
+	font-size: 14px;
 	align-items: center;
 	justify-content: flex-start;
 	flex-direction: row;
@@ -7236,7 +7242,7 @@ th * {
 	}
 
 	.containerWrap {
-		margin-top: 3rem;
+		margin-top: 80px;
 		padding-bottom: 1rem;
 	}
 

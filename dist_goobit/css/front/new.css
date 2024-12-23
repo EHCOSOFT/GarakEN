@@ -181,3 +181,109 @@
         gap: 60px;
     }
 }
+
+.diagram_01 ul {
+    align-items: center;
+    flex-direction: column;
+}
+
+.diagram_01 ul li {
+    font-size: 16px !important;
+    height: 200px !important;
+    width: 200px !important;
+}
+
+.diagram_01 ul li:nth-child(2) {
+    margin: -20px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .diagram_01 ul {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .diagram_01 ul li {
+        height: 240px !important;
+        width: 240px !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .diagram_01 ul li {
+        font-size: 20px !important;
+        height: 300px !important;
+        padding: 20px !important;
+        width: 300px !important;
+    }
+}
+
+.quick-wrap {
+    display: none !important;
+}
+
+.main-wrap {
+    margin: 0 !important;
+}
+
+.sa-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:1200px) {
+    .sa-container {
+        max-width: 1180px !important;
+    }
+}
+
+@media (min-width:1400px) {
+
+    .sa-container {
+        max-width: 1320px !important;
+    }
+}
+
+@media (min-width:1500px) {
+
+    .sa-container {
+        max-width: 1400px !important;
+    }
+}
+
+.sa-container .row {
+    justify-content: space-between;
+}
+
+.sa-container .row .col.l3 {
+    margin: 0;
+}
+
+.sa-container .main-wrap {
+    margin: 0 0 0 auto !important;
+}
+
+.sa-container>.row {
+    padding-top: 32px !important;
+}
+
+@media (min-width:1025px) {
+    .sa-container>.row {
+        padding-top: 60px !important;
+    }
+}
+
+@media (min-width:1400px) {
+    .sa-container .col.l3 {
+        width: 20%;
+    }
+
+    .sa-container .col.l8 {
+        width: 75%;
+    }
+}

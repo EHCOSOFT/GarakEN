@@ -9191,6 +9191,7 @@ nav .nav-wrapper .dept-trigger a {
 
 nav .nav-wrapper ul.center {
   display: flex;
+  gap: 20px;
   width: 50vw;
   height: 100%;
 }
@@ -9287,13 +9288,14 @@ nav ul a {
   transition: background-color 0.3s;
   font-family: "Pretendard";
   font-weight: 600;
-  font-size: 20px;
-  line-height: 160%;
+  font-size: 18px;
+  line-height: 120%;
   text-decoration: none;
   letter-spacing: 0px;
   color: rgb(15, 23, 42);
   display: block;
   cursor: pointer;
+  word-wrap: break-word;
 }
 
 @media screen and (max-width: 1024px) {
@@ -9479,7 +9481,7 @@ nav .input-field label.active i {
   left: 0;
   top: 0;
   width: 100%;
-  height: calc(100% + 110px);
+  height: 100vh;
   background: #fff;
   z-index: 9999;
   padding-bottom: 0;
@@ -9534,22 +9536,38 @@ nav .input-field label.active i {
 
 .all_menu_box .all_depth1 {
   display: flex;
-  height: calc(100% - 200px);
-  overflow-y: scroll;
+  height: 100%;
+  max-height: calc(100vh - 88px);
+  overflow-y: auto;
   border-top: 1px solid #e2e5eb;
 }
 
+.all_menu_box .all_depth1::-webkit-scrollbar {
+  background: none;
+  width: 8px;
+}
+
+.all_menu_box .all_depth1::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 100px;
+}
+
 .all_menu_box .all_depth1>li {
+  flex: 1;
   display: flex;
-  width: 20%;
-  height: 156vh;
+  width: 25%;
   flex-direction: column;
+  height: 100%;
   padding: 40px 0;
   border-right: 1px solid #e2e5eb;
 }
 
 .all_menu_box .all_depth1>li+li {
   border-right: 1px solid #e2e5eb;
+}
+
+.all_menu_box .all_depth1>li:last-child {
+  border-right: 0;
 }
 
 .all_menu_box .all_depth_box {
@@ -9560,11 +9578,11 @@ nav .input-field label.active i {
 }
 
 .all_menu_box .all_depth_box>span {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: #222;
   letter-spacing: -0.6px;
-  padding-left: 30px;
+  padding: 0 24px;
   margin-bottom: 1rem;
   position: relative;
 }
@@ -9598,7 +9616,7 @@ nav .input-field label.active i {
 
 .all_menu_box .all_depth2>li {
   margin-bottom: 1.5rem;
-  padding-left: 30px;
+  padding: 0 24px;
   box-sizing: border-box;
 }
 
@@ -9782,7 +9800,7 @@ nav .input-field label.active i {
   text-decoration: none;
   font-family: "Pretendard";
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 160%;
   text-decoration: none;
   letter-spacing: 0px;
@@ -19757,13 +19775,14 @@ input[type=range]+.thumb {
  사이드메뉴
 *******************/
 .sidenav {
+  height: 100%;
   position: fixed;
   width: 90%;
   left: 0;
   top: 0;
   margin: 0;
   transform: translateX(-100%);
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
   background-color: #fff;
   z-index: 999;
   will-change: transform;
@@ -19921,6 +19940,10 @@ input[type=range]+.thumb {
 /*******************
  모바일 GNB
 *******************/
+.m-gnb-wrap {
+  height: 100%;
+}
+
 .m-gnb-head {
   background: rgb(255, 255, 255);
   display: flex;
@@ -20113,7 +20136,7 @@ input[type=range]+.thumb {
   align-items: normal;
   flex: 1;
   border-left: 0.1rem solid var(--gray-20);
-  height: 80vh;
+  height: calc(100vh - 98px);
   overflow-y: auto;
   scroll-behavior: smooth;
 }
@@ -20124,7 +20147,7 @@ input[type=range]+.thumb {
 
 .m-gnb-menu .submenu-wrap .dl {
   background-color: rgb(255, 255, 255);
-  padding: 16px 24px;
+  padding: 16px 20px;
 }
 
 .m-gnb-menu .submenu-wrap .dl:not(:first-child) {
@@ -20135,7 +20158,6 @@ input[type=range]+.thumb {
   font-weight: 700;
   font-size: 1rem;
   height: 2.4rem;
-  margin-bottom: 0.5rem;
   border-bottom: 0.1rem solid #eee;
 }
 
@@ -20148,12 +20170,12 @@ input[type=range]+.thumb {
   border-bottom: none;
   position: relative;
   display: flex;
-  font-size: 1rem;
+  font-size: 14px;
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
   cursor: pointer;
-  padding: 0.75rem;
+  padding: 0.75rem 0;
 }
 
 .m-gnb-menu .submenu-wrap .dl dt a::after {
@@ -20194,8 +20216,8 @@ input[type=range]+.thumb {
   font-weight: 450;
   display: flex;
   align-items: center;
-  height: 3.6rem;
-  padding: 0rem 1.5rem;
+  height: 48px;
+  padding: 0rem 8px;
 }
 
 .m-gnb-menu .submenu-wrap .dl .sub-ul {
