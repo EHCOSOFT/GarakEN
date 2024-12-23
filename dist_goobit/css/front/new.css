@@ -22,6 +22,7 @@
     word-break: break-all;
 }
 
+/* 
 .table_bus tbody {
     display: flex;
     flex-direction: column;
@@ -39,6 +40,7 @@
     gap: 10px;
     height: min-content;
     padding: 12px 0 !important;
+    width: 100% !important;
 }
 
 .table_bus tbody>tr>th img {
@@ -64,6 +66,10 @@
 
 .breadcrumb-wrap .breadcrumb li a.home {
     font-size: 0;
+} */
+
+.market-dm .bus_list {
+    display: block;
 }
 
 @media screen and (min-width: 768px) {
@@ -80,45 +86,18 @@
         width: 83.3333333333%;
     }
 
-    .table_bus tbody>tr>td>ul {
+    /* .table_bus tbody>tr>td>ul {
         flex-direction: row;
     }
 
     .table_bus tbody>tr>td>ul>li {
         width: 50% !important;
-    }
+    } */
 }
 
 @media screen and (min-width: 992px) {
-    .table_bus tbody {
-        display: table-row-group;
-    }
-
-    .table_bus tbody>tr {
-        display: table-row;
-    }
-
-    .table_bus tbody>tr>th {
-        display: table-cell;
-        padding: 15px 10px 10px !important;
-    }
-
-    .table_bus tbody>tr>th img {
-        height: unset;
-        margin: 0 auto 1rem auto !important;
-        width: unset;
-    }
-
-    .table_bus tbody>tr>td {
-        height: 3rem;
-    }
-
-    .table_bus tbody>tr>td>ul {
-        display: table !important;
-    }
-
-    .table_bus tbody>tr>td>ul>li {
-        padding: 10px 0 10px 15px !important;
+    .market-dm .bus_list {
+        display: table;
     }
 }
 
@@ -227,7 +206,7 @@
 }
 
 .sa-container {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     width: 100%;
     padding-right: 20px;
@@ -295,5 +274,350 @@
 @media (min-width:1025px) {
     .diagram_02 dt {
         font-size: 20px !important;
+    }
+}
+
+.mission-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 210px;
+    justify-content: center;
+}
+
+.mission-box h5 {
+    font-size: 18px;
+}
+
+@media (min-width:1025px) {
+    .mission-box {
+        height: 240px;
+    }
+
+    .company_vision .vision-container .strategy-container .title {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .company_vision .vision-container .strategy-container .row .strategy-group .strategy-list li {
+        font-size: 16px;
+    }
+
+    .company_vision .vision-container .strategy-container .row .tasks-group .tasks-list li {
+        text-align: left;
+    }
+
+    .company_vision .vision-container .core-values {
+        padding: 0 24px;
+    }
+
+    .value-wrap {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .value-wrap .value {
+        margin: 0 !important;
+    }
+}
+
+@media (min-width:1400px) {
+    .mission-box h5 {
+        font-size: 24px;
+    }
+
+    .company_vision .vision-container .strategy-container .row .strategy-group .strategy-list li {
+        font-size: 20px;
+    }
+}
+
+.banner-wrap h5 {
+    font-size: 16px;
+}
+
+.company_history .history_wrap .list li .month {
+    flex: 0 0 auto;
+}
+
+@media (min-width:1025px) {
+    .company_history .banner-wrap {
+        padding: 32px 20px;
+        width: 100%;
+    }
+
+    .company_history .banner-wrap .left {
+        flex: 0 0 auto;
+    }
+
+    .company_history .banner-wrap .text-wrap {
+        gap: 40px;
+        margin: 0 !important;
+    }
+
+    .company_history .banner-wrap .text-left h2 {
+        font-size: 40px;
+    }
+}
+
+@media (min-width:1025px) {
+    .company_history .banner-wrap {
+        padding: 32px 60px;
+        width: 100%;
+    }
+
+    .company_history .banner-wrap .text-left h2 {
+        font-size: 60px;
+    }
+
+    .company_history .banner-wrap .text-right h5 {
+        font-size: 20px;
+    }
+}
+
+.w-gnb-wrap .w-gnb-menu .submenu-in.about,
+#w-gnb-sm4-1 .sub-in {
+    width: 33.3% !important;
+}
+
+#w-gnb-sm2-1 .sub-tit a,
+#w-gnb-sm2-2 .sub-tit a,
+#w-gnb-sm2-3 .sub-tit a,
+#w-gnb-sm2-4 .sub-tit a,
+#w-gnb-sm2-5 .sub-tit a,
+#w-gnb-sm2-6 .sub-tit a,
+#w-gnb-sm2-7 .sub-tit a,
+#w-gnb-sm2-8 .sub-tit a,
+#w-gnb-sm2-9 .sub-tit a {
+    align-items: flex-start;
+    display: flex;
+    height: 68px;
+}
+
+@media (min-width:1025px) {
+    .market-list {
+        display: flex;
+        gap: 30px;
+    }
+
+    .market-list dl {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .market-list dl dd {
+        flex: 1;
+    }
+}
+
+.img-cover {
+    width: 100%;
+}
+
+@media (min-width:1025px) {
+    .gr_step dl {
+        align-items: center;
+        display: flex;
+    }
+
+    .gr_step dl dd {
+        align-items: center;
+        display: flex;
+        flex: 1;
+        height: 64px;
+    }
+
+    .citizen-event-wrap {
+        gap: 24px;
+    }
+
+    .citizen-event-wrap .col {
+        width: calc(50% - 12px) !important;
+    }
+
+    .gr_step.type2 {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .gr_step.type2 dl {
+        align-items: stretch;
+        position: relative;
+    }
+
+    .gr_step.type2 dt {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .gr_step dl::after {
+        display: none;
+    }
+
+    .gr_step.type2 dl dt {
+        min-height: 80px;
+        height: auto;
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    .gr_step.type2 dl dt::after {
+        content: url(../../images/icon_common-arrowDown_blue.svg);
+        position: absolute;
+        bottom: -42px;
+    }
+
+    .gr_step.type2 dl.last dt::after {
+        display: none;
+    }
+
+    .gr_step.type2 dl dd {
+        align-items: flex-start;
+        flex: 1;
+        height: auto;
+        justify-content: center;
+    }
+
+    .gr_step.type2 ul li {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .chulha_step_list {
+        display: flex;
+    }
+
+}
+
+.chulha_process .tit1 {
+    font-size: 16px !important;
+    line-height: 1.2;
+}
+
+@media (min-width:1025px) {
+    .chulha_process {
+        display: flex !important;
+        justify-content: center;
+        width: 100% !important;
+    }
+
+    .chulha_process .box1,
+    .chulha_process .box2 {
+        display: flex !important;
+        flex-direction: column;
+        height: auto;
+        flex: 0 0 auto;
+    }
+
+    .chulha_process .con_box1 {
+        flex: 1;
+    }
+
+    .chulha_process .step_box {
+        flex: 0 0 auto;
+        width: 168px;
+    }
+}
+
+.market-dm .bold_list {
+    gap: 8px;
+}
+
+.market-dm .bold_list>li {
+    display: flex;
+    flex-direction: column;
+}
+
+.market-dm .bold_list .txt1 {
+    padding: 0 !important;
+}
+
+.market-dm .dm_map_list .gr_list .fix_w {
+    width: 100%;
+}
+
+@media (min-width:1025px) {
+    .market-dm .bold_list>li {
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .bold_list.type2>li {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .market-dm .bold_list .bold {
+        width: auto;
+    }
+
+    .dm_map_list .gr_list li {
+        flex-direction: column;
+    }
+}
+
+.main-visual {
+    align-items: center;
+    /* background: url(../../images/img_main-sec01_bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center; */
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    position: relative;
+}
+
+.main-video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main-visual .main-visual-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.main-visual .main-visual-text .mo-text {
+    max-width: 600px;
+    width: 100%;
+}
+
+.main-visual .main-visual-text .pc-text {
+    display: none;
+}
+
+@media (min-width:1025px) {
+    .main-visual .main-visual-text {
+        bottom: 40px;
+        left: 40px;
+        top: unset;
+        transform: unset;
+    }
+
+    .main-visual .main-visual-text .mo-text {
+        display: none;
+    }
+
+    .main-visual .main-visual-text .pc-text {
+        display: block;
+        max-width: 800px;
+    }
+}
+
+@media (min-width:1400px) {
+    .main-visual .main-visual-text .pc-text {
+        max-width: 1200px;
     }
 }

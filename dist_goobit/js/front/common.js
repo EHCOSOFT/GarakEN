@@ -3,7 +3,8 @@ $(document).ready(function () {
     function applyCommonjQuery() {
         $("#footer").append(Footer());
         $("#lnbList").append(LnbList());
-
+        $("#lnbKeyProjectList").append(lnbKeyProjectList());
+        $("#lnbMarketGuideList").append(lnbMarketGuideList());
 
         function Footer() {
             return `
@@ -97,6 +98,70 @@ $(document).ready(function () {
             `
         }
 
+        function lnbKeyProjectList() {
+            return `
+            <li>
+                <a href="09_01_public_market_operation.html" class="body-1-semibold link-active">Operation of Public
+                    Wholesale Markets</a>
+            </li>
+            <li>
+                <a href="09_02_digital_market_transform.html" class="body-1-semibold link-active">Electronic Auction Market</a>
+            </li>
+            <li>
+                <a href="09_03_school_meal_project.html" class="body-1-semibold link-active">School meal business</a>
+            </li>
+            <li>
+                <a href="09_04_retail_market_info.html" class="body-1-semibold link-active">Wholesale Distribution Information Generation and Dissemination</a>
+            </li>
+            <li>
+                <a href="09_05_market_operate.html" class="body-1-semibold link-active">Garak Mall Operation & Management</a>
+            </li>
+            <li>
+                <a href="09_08_dd_meal_project.html" class="body-1-semibold link-active">Dundeun Meal Project</a>
+            </li>
+            <li>
+                <a href="09_05_garak_market_modernize.html" class="body-1-semibold link-active">Garak Market Facility Modernization Project</a>
+            </li>
+            <li>
+                <a href="09_07_garakmall_highlight.html" class="body-1-semibold link-active">Garak Mall Landmark Project</a>
+            </li>
+            <li>
+                <a href="09_06_food_safety_management.html" class="body-1-semibold link-active">Agricultural and fishery food safety management</a>
+            </li>
+            `
+        }
+
+        function lnbMarketGuideList() {
+            return `
+            <li>
+                <a href="#" class="body-1-semibold btn-menu-toggle">Wholesale Market Guide</a>
+                <ul class="dept2">
+                    <li><a href="13_06_market_status.html" class="body-1">Market Status</a></li>
+                    <li><a href="13_07_distribution_system.html" class="body-1">Distribution System Guide</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="body-1-semibold btn-menu-toggle">Garak Market Guide</a>
+                <ul class="dept2">
+                    <li><a href="13_19_garak_status.html" class="body-1">Garak Market Overview</a></li>
+                    <li><a href="13_21_garak_auction_times.html" class="body-1">Auction Time</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="body-1-semibold btn-menu-toggle">Gangseo Market Guide</a>
+                <ul class="dept2">
+                    <li><a href="13_11_gangseo_status.html" class="body-1">Gangseo Market Overview</a></li>
+                    <li><a href="13_13_gangseo_auction_times.html" class="body-1">Auction Time</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="body-1-semibold btn-menu-toggle">Yanggok Market Guide</a>
+                <ul class="dept2">
+                    <li><a href="13_42_yangok_market_status.html" class="body-1">Yanggok Market Overview</a></li>
+                </ul>
+            </li>
+            `
+        }
     };
 
     // 공통 jQuery 적용
@@ -183,6 +248,12 @@ $(document).ready(function () {
         $('.dept2').not(submenu).slideUp();  // 클릭하지 않은 서브메뉴들 닫기
     });
 
+    // dept2가 없는 경우 a태그 활성화
+    $('.dept1 > li > a.link-active').on('click', function (e) {
+        e.stopPropagation(); 
+        window.location.href = $(this).attr('href');
+    });
+
     $('.menu-wrap .mn').on('click', function (e) {
 
         // 모든 메뉴에서 active 클래스 제거
@@ -191,6 +262,7 @@ $(document).ready(function () {
         // 클릭한 메뉴에 active 클래스 추가
         $(this).addClass('active');
     });
+    
     $('.submenu-wrap .dt').on('click', function (e) {
         $(this).toggleClass('active');
         // 클릭한 메뉴에 active 클래스 추가
