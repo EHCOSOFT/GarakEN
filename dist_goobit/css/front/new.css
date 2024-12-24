@@ -367,7 +367,7 @@
     }
 
     .company_history .banner-wrap .text-left h2 {
-        font-size: 60px;
+        font-size: 56px;
     }
 
     .company_history .banner-wrap .text-right h5 {
@@ -620,10 +620,24 @@
     .main-visual .main-visual-text .pc-text {
         max-width: 1200px;
     }
+
+    .company_vision .vision-container .goals .goal-cards {
+        flex-wrap: nowrap;
+        width: 80%;
+    }
+
+    .company_vision .vision-container .goals .goal-cards .goal {
+        height: 220px;
+        width: calc((100% / 5) - 8px);
+    }
 }
 
 @media screen and (min-width:768px) {
     .ddmeal_w .sec_02 .diagram_01 dt {
         width: auto;
     }
+}
+
+.breadcrumb-wrap .breadcrumb li a.home {
+    font-size: 0;
 }

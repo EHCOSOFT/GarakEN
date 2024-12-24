@@ -8476,7 +8476,7 @@ th * {
 	.company_vision .vision-container .core-values .value p span {
 		display: block;
 		color: #fff;
-		font-size: 0.8rem;
+		font-size: 16px;
 	}
 
 	.company_vision .vision-container .goals {

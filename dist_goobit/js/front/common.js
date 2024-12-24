@@ -126,7 +126,7 @@ $(document).ready(function () {
                 <a href="09_07_garakmall_highlight.html" class="body-1-semibold link-active">Garak Mall Landmark Project</a>
             </li>
             <li>
-                <a href="09_06_food_safety_management.html" class="body-1-semibold link-active">Agricultural and fishery food safety management</a>
+                <a href="09_06_food_safety_management.html" class="body-1-semibold link-active">Agricultural and fishery food<br>safety management</a>
             </li>
             `
         }

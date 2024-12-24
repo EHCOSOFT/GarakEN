@@ -4789,7 +4789,7 @@ ol>li {
 .company_vision .vision-container .core-values .value p span {
 	display: block;
 	color: #fff;
-	font-size: 0.8rem;
+	font-size: 16px;
 }
 
 .company_vision .vision-container .goals {
@@ -4797,7 +4797,9 @@ ol>li {
 }
 
 .company_vision .vision-container .goals .goal-cards {
-	width: 80%;
+	flex-wrap: wrap;
+	gap: 16px;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -4823,11 +4825,17 @@ ol>li {
 }
 
 .company_vision .vision-container .goals .goal-cards .goal {
+	align-items: center;
 	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	text-align: center;
 	padding: 1rem;
 	border-radius: 8px;
-	margin-right: 1rem;
+	margin: 0;
+	height: 180px;
+	width: 33.3%;
 }
 
 .company_vision .vision-container .goals .goal-cards .goal p {
