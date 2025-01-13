@@ -1853,3 +1853,29 @@
     font-size: var(--font-16-md);
     text-align: center;
 }
+
+.company_vision .vision-container .goals .goal-cards .goal {
+    width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .company_vision .vision-container .goals .goal-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .company_vision .vision-container .goals .goal-cards .goal {
+        width: 33.3%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .company_vision .vision-container .goals .goal-cards {
+        flex-wrap: nowrap;
+    }
+
+    .company_vision .vision-container .goals .goal-cards .goal {
+        width: 20%;
+    }
+}
