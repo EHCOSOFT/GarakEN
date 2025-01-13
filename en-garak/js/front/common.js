@@ -108,7 +108,7 @@ $(document).ready(function () {
                 <a href="09_02_digital_market_transform.html" class="body-1-semibold link-active">Electronic Auction Market</a>
             </li>
             <li>
-                <a href="09_03_school_meal_project.html" class="body-1-semibold link-active">School meal business</a>
+                <a href="09_03_school_meal_project.html" class="body-1-semibold link-active">School meal project</a>
             </li>
             <li>
                 <a href="09_04_retail_market_info.html" class="body-1-semibold link-active">Wholesale Distribution Information Generation and Dissemination</a>
