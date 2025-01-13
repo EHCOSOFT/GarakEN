@@ -1879,3 +1879,7 @@
         width: 20%;
     }
 }
+
+.w-gnb-wrap .w-gnb-menu .sub-tit .btn-txt::after {
+    top: 20px;
+}

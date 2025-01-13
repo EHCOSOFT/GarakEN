@@ -105,7 +105,7 @@ $(document).ready(function () {
                     Wholesale Markets</a>
             </li>
             <li>
-                <a href="09_02_digital_market_transform.html" class="body-1-semibold link-active">Electronic Auction Market</a>
+                <a href="09_02_digital_market_transform.html" class="body-1-semibold link-active">Digital Transformation of Wholesale Markets</a>
             </li>
             <li>
                 <a href="09_03_school_meal_project.html" class="body-1-semibold link-active">School meal project</a>
